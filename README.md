@@ -1,7 +1,7 @@
 ## Assignment
 Fork your AdamNet app and make it work server side.
 
-![](/Users/jamie/Dropbox/HVA/Minor/05_performanceMatters/week_02/preview.png)
+![](https://github.com/jajan20/performance-matters-server-side/blob/master/preview.png)
 
 #### Criteria
 - [x] Convert clientside OBA app to serverside.
@@ -27,7 +27,7 @@ Since my app uses an API and requests every image asociated with (in my example)
 
 #### Initial state
 As you can see, the site loads very slow. We can do a couple of things to increase the performance.
-![](/Users/jamie/Dropbox/HVA/Minor/05_performanceMatters/week_02/initialAudit.png)
+![](https://github.com/jajan20/performance-matters-server-side/blob/master/initialAudit.png)
 
 ## Increasing performance
 Next week I'll increase performance with the next tools.
