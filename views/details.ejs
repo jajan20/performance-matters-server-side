@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<% include head.ejs %>
+<body>
+	<section id="images">
+		
+		<% for (let i = 0; i < rows.length; i++) { %>
+  		
+  		<article>
+	  	
+	  		<h2><%= rows[i].title.value %></h2>
+			<img src="<%= rows[i].img.value %>">
+
+		</article>
+		
+		<% } %>
+	
+	</section>
+</body>
+</html>
+
