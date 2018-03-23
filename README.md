@@ -23,7 +23,7 @@ For this project I used a couple of npm packages, make sure you install these wi
 | node-fetch      |    2.1.1 |
 
 ## Audits
-Since my app uses an API and requests every image asociated with (in my example) with "**Het koninklijk Concertgebouw**" loading all these images on a slow network is really slow.
+Since my app uses an API and requests every image asociated with (in my example) with "**Het koninklijk Concertgebouw**" loading all these images on a slow network is really time consuming..
 
 #### Initial state
 As you can see, the site loads very slow. We can do a couple of things to increase the performance.
