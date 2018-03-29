@@ -3,7 +3,7 @@ Fork your AdamNet app and make it work server side.
 
 [Link to original live preview: ](https://oege.ie.hva.nl/~jansenj031/src/)
 
-![](https://github.com/jajan20/performance-matters-server-side/blob/master/preview.png)
+![](https://github.com/jajan20/performance-matters-server-side/blob/master/assets/preview_02.png)
 
 #### Criteria
 - [x] Convert clientside OBA app to serverside.
