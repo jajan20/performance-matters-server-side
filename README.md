@@ -33,6 +33,10 @@ Since my app uses an API and requests every image asociated with (in my example)
 As you can see, the site loads very slow. We can do a couple of things to increase the performance.
 ![](https://github.com/jajan20/performance-matters-server-side/blob/master/assets/initialAudit.png)
 
+#### After increasing performance
+![](https://github.com/jajan20/performance-matters-server-side/blob/master/assets/audit2.png)
+
+
 ## Increasing performance
 Next week I'll increase performance with the next tools.
 
