@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<% include head.ejs %>
-<body>
-	<section id="images">
-		
-		<% for (let i = 0; i < rows.length; i++) { %>
-  		
-  		<article>
-	  	
-	  		<h2><%= rows[i].title.value %></h2>
-			<img src="<%= rows[i].img.value %>">
+<body>	
 
-		</article>
-		
+	<article id="images">
+	
+		<% for (var i = 0; i < detail.img.length; i++) { %>
+			
+			<% if (detail.img[i]) { %>
+				<img src="<%= detail.img[i] %>">
+			<% } %>
+			
 		<% } %>
 	
-	</section>
+	</article>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js');
+		}
+	</script>
+	<script src="js/imageScript.js"></script>
 </body>
 </html>
 

@@ -1,15 +1,30 @@
 <!DOCTYPE html>
+
 <html>
 	<% include head.ejs %>
+
 <body>
+		<h1>Amsterdam Buildings & Image History</h1>
+		<input id="search-bar" type="search" placeholder="Search buildings">
+		<ol id="list">
+		<% for (let i = 0; i < rows.length; i++) { %>
+			<li><a href="/<%= rows.indexOf(rows[i]) %>">
+			<%= rows[i].building %></a></li>
+		<% } %>
+		</ol>
+
+			<footer id="offline">
+				<h2>You're offline, but I got you covered! You can still view the pages you've visited before.</h2>
+			</footer>
+	<script>
 		
-		
-		<section id="buildings">
-			<h1>Amsterdam Buildings & Image History</h1>
-			<input type="search" placeholder="Search buildings"><button type="submit">Find</button>
-			<h2>Het Koninklijk Concertgebouw</h1>
-			<a href="./details">Naar afbeeldingen</a>
-		</section>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js');
+		}
+	
+	</script>
+	<script src="js/bundle.js"></script>
 </body>
+
 </html>
 
