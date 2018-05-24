@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 	<% include head.ejs %>
-
 <body>
+
+<noscript>
+	<section id="noScript">
+		<link type="text/css" rel="stylesheet" href="css/noScript-style.css">
+		<article>
+			<h2>Javascript is disabled. Search function is disabled</h2>
+			<p>You can still scroll through the database of buildings</p>
+		</article>
 		<h1>Amsterdam Buildings & Image History</h1>
-		<input id="search-bar" type="search" placeholder="Search buildings">
 		<ol id="list">
+			<% for (let i = 0; i < rows.length; i++) { %>
+				<li><a href="/<%= rows.indexOf(rows[i]) %>">
+				<%= rows[i].building %></a></li>
+			<% } %>
+		</ol>
+	</section>
+</noscript>
+	
+<section id="mainContent">
+	<h1>Amsterdam Buildings & Image History</h1>
+	<input id="search-bar" type="search" placeholder="Search buildings">
+	<ol id="list">
 		<% for (let i = 0; i < rows.length; i++) { %>
 			<li><a href="/<%= rows.indexOf(rows[i]) %>">
 			<%= rows[i].building %></a></li>
 		<% } %>
-		</ol>
+	</ol>
 
-			<footer id="offline">
-				<h2>You're offline, but I got you covered! You can still view the pages you've visited before.</h2>
-			</footer>
-	<script>
-		
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('sw.js');
-		}
-	
-	</script>
-	<script src="js/bundle.js"></script>
+	<footer class="offlineContainer">
+		<h2>You're offline, but I got you covered! You can still view the pages you've visited before.</h2>
+	</footer>
+</section>
+
+<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('sw.js');
+	}
+</script>
+<script src="js/bundle.js"></script>
 </body>
-
 </html>
 
