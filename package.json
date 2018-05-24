@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "compile": "browserify ./public/js/script.js > ./public/js/bundle.js"
   },
   "author": "",
