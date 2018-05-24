@@ -9,6 +9,7 @@ console.log('Offline')}else{console.log('Online')}}
 module.exports=checkNetwork()},{}],3:[function(require,module,exports){let checkNetwork=require('./navigator.js')
 let imageSize=require('./imageScript.js')
 var search=document.getElementById('search-bar')
+if(window.location.href.substr(0,5)!=='https'){window.location.href=window.location.href.replace('http','https')}
 search.onkeyup=function(event){var filter=search.value.toUpperCase()
 var ol=document.getElementById('list')
 var li=ol.getElementsByTagName('li')
